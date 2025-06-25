@@ -16,4 +16,8 @@ export async function getAllTasks () {
         data: tasks
     }
 }
+
+export async function countTasks() {
+    
+}
     

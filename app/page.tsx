@@ -13,7 +13,7 @@ import { Task } from "@/lib/generated/prisma"
 import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
-//import List from "../components/custom/List"
+
 
 
 export default function Home() {
@@ -71,8 +71,8 @@ const form = useForm<z.infer<typeof formSchema>>({
       </form>
     </Form>
       </div>
-      list component here
-      {/* <List/> */}
+      list component here in the form of custom component "List"
+          //import List from "../components/custom/List" add this to the top of the page.
     </div>
     </div>
     </div>
