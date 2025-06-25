@@ -1,4 +1,3 @@
-'use server'
 
 import { getAllTasks } from "@/app/actions/serverActions"
 import { Button } from "../ui/button"
@@ -6,8 +5,8 @@ export default async function List() {
     const tasks = await getAllTasks()    
     
     return(
-        <div>
-            <div className="w-[700px] bg-white border-2 rounded-2xl p-2 ">
+        <div >
+            <div className="w-[700px] bg-white  rounded-2xl p-2 m-2">
         {
           (await tasks.data).map((task) => (
             <ul key={task.id} role="list" className="divide-y divide-gray-100">
